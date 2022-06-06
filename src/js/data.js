@@ -7,3 +7,12 @@ export const productList = [
     { id: 5, name: "The Creamiest Creamy Chicken", price: 200, img: "images 2/img 5.png" },
     { id: 6, name: "Fruity Pancake with Orange Blueberry", price: 200, img: "images 2/img 6.png" },
 ];
+
+export const categoriesList = [
+    {id:1, name: "Breakfast", img: "images 3/Group 890.png"},
+    {id:2, name: "Vegan", img: "images 3/Group 879.png"},
+    {id:3, name: "Meat", img: "images 3/Group 891.png"},
+    {id:4, name: "Dessert", img: "images 3/Group 892.png"},
+    {id:5, name: "Lunch", img: "images 3/Group 893.png"},
+    {id:6, name: "Chocolate", img: "images 3/Group 894.png"},
+]

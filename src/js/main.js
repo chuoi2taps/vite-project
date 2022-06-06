@@ -1,5 +1,5 @@
 import { render } from "./common";
-import { productList } from "./data";
+import { categoryList, productList } from "./data";
 // selector đến element product
 // khai báo hàm show product
 function showProducts(products) {
@@ -28,5 +28,5 @@ function showProducts(products) {
     // return
     return result;
 }
-
 render("product", showProducts(productList));
+
