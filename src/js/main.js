@@ -1,5 +1,6 @@
 import { render } from "./common";
-import { categoryList, productList } from "./data";
+import { productList } from "./data";
+import { categoriesList } from "./data";
 // selector đến element product
 // khai báo hàm show product
 function showProducts(products) {
@@ -29,4 +30,21 @@ function showProducts(products) {
     return result;
 }
 render("product", showProducts(productList));
+function showCategories(categories){
+    //kiểm tra
+    if(!Array.isArray(categoriesList) || categoriesList.length == 0) return [];
 
+    //xử lý
+    let result = ""
+    for(let i = 0; i<categories.length; i++){
+        const category = categories[i];
+        result += 
+        `<div class = "column">
+        <a href = ""><img src = "${category.img}" alt = ""/></a>
+        <a href=""><h3 class="px-2.5 font-bold">${category.name}</h3></a>
+        </div>`
+    }
+    //trả về
+    return result;
+}
+render("categories", showCategories(categoriesList));

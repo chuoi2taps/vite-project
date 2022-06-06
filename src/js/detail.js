@@ -1,5 +1,6 @@
 import { render } from "./common";
 import { productList } from "./data";
+import { categoriesList } from "./data";
 
 // lấy được id trên url
 const id = new URLSearchParams(window.location.search).get("id");
