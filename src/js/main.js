@@ -13,7 +13,7 @@ function showProducts(products) {
         const product = products[i];
         result += `
         <div class="column">
-        <a href="/detail.html?id=${product.id}"><img src="${product.img}" class="rounded-3xl" alt="" /></a>
+        <a href="/detail.html?id=${product.id}"><img src="${product.img}" class="rounded-3xl w-full" alt="" /></a>
         <h3 class="text-[#F54748] pt-5 font-bold">
             <a href="/detail.html?id=${product.id}">${product.name}</a>
         </h3>
@@ -40,7 +40,7 @@ function showCategories(categories){
         const category = categories[i];
         result += 
         `<div class = "column">
-        <a href = ""><img src = "${category.img}" alt = ""/></a>
+        <a href = ""><img src = "${category.img}" alt = "" class="w-full"/></a>
         <a href=""><h3 class="px-2.5 font-bold">${category.name}</h3></a>
         </div>`
     }

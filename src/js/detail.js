@@ -1,6 +1,5 @@
 import { render } from "./common";
 import { productList } from "./data";
-import { categoriesList } from "./data";
 
 // lấy được id trên url
 const id = new URLSearchParams(window.location.search).get("id");
@@ -8,9 +7,9 @@ const id = new URLSearchParams(window.location.search).get("id");
 // Tim trong mang, neu co id nao trung voi id trong mang thi tra ve ket qua
 const product = productList.find((item) => item.id == id);
 const result = `
-    <div class="text-center md:text-left max-w-[620px]">
+    <div class="text-center md:text-left max-w-[620px] order-2 md:order-1">
     <h2 class="text-3xl md:text-5xl font-black pb-5">${product.name}</h2>
-    <span class="font-semibold text-[30px] md:text-[40px] text-[#F54748]">$30</span>
+    <span class="font-semibold text-[30px] md:text-[40px] text-[#F54748]">${product.price}</span>
     <p class="pt-7">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <form action="" class="pt-8 pb-10">
     <input
@@ -25,8 +24,8 @@ const result = `
   </button>
     </form>
     </div>
-    <div class="banner text-center">
-        <img src="${product.img}" alt="">
+    <div class="banner text-center order-1 md:order-2 px-2">
+        <img src="${product.img}" alt="" class="w-full">
     </div>
 `;
 render("product-detail", result);
