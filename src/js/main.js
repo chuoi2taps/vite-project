@@ -20,7 +20,7 @@ function showProducts(products) {
         <div class="flex pt-4 items-start">
             <span class=""><img src="${product.icon}" alt="" /></span>
             <h3 class="pl-1">30 Minutes</h3>
-            <span><img src="${product.icon}" alt="" class="pl-5" /></span>
+            <span><img src="${product.icon2}" alt="" class="pl-5" /></span>
             <h3 class="pl-1">Snack</h3>
         </div>
     </div>
